@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34F79C071D6051B000EBC756 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F79C061D6051B000EBC756 /* AppDelegate.swift */; };
+		34F79C091D6051B000EBC756 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F79C081D6051B000EBC756 /* ViewController.swift */; };
+		34F79C0C1D6051B000EBC756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F79C0A1D6051B000EBC756 /* Main.storyboard */; };
+		34F79C0E1D6051B100EBC756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F79C0D1D6051B100EBC756 /* Assets.xcassets */; };
+		34F79C111D6051B100EBC756 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F79C0F1D6051B100EBC756 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34F79C031D6051B000EBC756 /* ConsultarISBNOpenLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsultarISBNOpenLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34F79C061D6051B000EBC756 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34F79C081D6051B000EBC756 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34F79C0B1D6051B000EBC756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34F79C0D1D6051B100EBC756 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34F79C101D6051B100EBC756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34F79C121D6051B100EBC756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34F79C001D6051B000EBC756 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34F79BFA1D6051B000EBC756 = {
+			isa = PBXGroup;
+			children = (
+				34F79C051D6051B000EBC756 /* ConsultarISBNOpenLibrary */,
+				34F79C041D6051B000EBC756 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34F79C041D6051B000EBC756 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34F79C031D6051B000EBC756 /* ConsultarISBNOpenLibrary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34F79C051D6051B000EBC756 /* ConsultarISBNOpenLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				34F79C061D6051B000EBC756 /* AppDelegate.swift */,
+				34F79C081D6051B000EBC756 /* ViewController.swift */,
+				34F79C0A1D6051B000EBC756 /* Main.storyboard */,
+				34F79C0D1D6051B100EBC756 /* Assets.xcassets */,
+				34F79C0F1D6051B100EBC756 /* LaunchScreen.storyboard */,
+				34F79C121D6051B100EBC756 /* Info.plist */,
+			);
+			path = ConsultarISBNOpenLibrary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34F79C021D6051B000EBC756 /* ConsultarISBNOpenLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34F79C151D6051B100EBC756 /* Build configuration list for PBXNativeTarget "ConsultarISBNOpenLibrary" */;
+			buildPhases = (
+				34F79BFF1D6051B000EBC756 /* Sources */,
+				34F79C001D6051B000EBC756 /* Frameworks */,
+				34F79C011D6051B000EBC756 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConsultarISBNOpenLibrary;
+			productName = ConsultarISBNOpenLibrary;
+			productReference = 34F79C031D6051B000EBC756 /* ConsultarISBNOpenLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34F79BFB1D6051B000EBC756 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Mauro Alberto Flores Almonte";
+				TargetAttributes = {
+					34F79C021D6051B000EBC756 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZETUXU8779;
+					};
+				};
+			};
+			buildConfigurationList = 34F79BFE1D6051B000EBC756 /* Build configuration list for PBXProject "ConsultarISBNOpenLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34F79BFA1D6051B000EBC756;
+			productRefGroup = 34F79C041D6051B000EBC756 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34F79C021D6051B000EBC756 /* ConsultarISBNOpenLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34F79C011D6051B000EBC756 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F79C111D6051B100EBC756 /* LaunchScreen.storyboard in Resources */,
+				34F79C0E1D6051B100EBC756 /* Assets.xcassets in Resources */,
+				34F79C0C1D6051B000EBC756 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34F79BFF1D6051B000EBC756 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F79C091D6051B000EBC756 /* ViewController.swift in Sources */,
+				34F79C071D6051B000EBC756 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		34F79C0A1D6051B000EBC756 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34F79C0B1D6051B000EBC756 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34F79C0F1D6051B100EBC756 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34F79C101D6051B100EBC756 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34F79C131D6051B100EBC756 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34F79C141D6051B100EBC756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34F79C161D6051B100EBC756 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ConsultarISBNOpenLibrary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mauro.ConsultarISBNOpenLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		34F79C171D6051B100EBC756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ConsultarISBNOpenLibrary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mauro.ConsultarISBNOpenLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34F79BFE1D6051B000EBC756 /* Build configuration list for PBXProject "ConsultarISBNOpenLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F79C131D6051B100EBC756 /* Debug */,
+				34F79C141D6051B100EBC756 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34F79C151D6051B100EBC756 /* Build configuration list for PBXNativeTarget "ConsultarISBNOpenLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F79C161D6051B100EBC756 /* Debug */,
+				34F79C171D6051B100EBC756 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34F79BFB1D6051B000EBC756 /* Project object */;
+}
