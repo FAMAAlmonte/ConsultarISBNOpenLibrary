@@ -1,25 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ConsultarISBNOpenLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulta el ISBN en Open Library" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hel-rp-Q25">
+                                <rect key="frame" x="29" y="88" width="262" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce el número ISBN a consultar" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="C7S-na-0GP">
+                                <rect key="frame" x="29" y="154" width="262" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="capturaISBN:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="X8y-OS-vFZ"/>
+                                    <action selector="capturaISBN:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="uJs-Ug-1F6"/>
+                                    <action selector="capturaISBN:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="vzJ-fB-z1C"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Knb-gt-uuN"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="sRR-64-jcL">
+                                <rect key="frame" x="107" y="20" width="100" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="T1H-PM-aiB"/>
+                                    <constraint firstAttribute="width" constant="100" id="bzb-oe-z25"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="ek1-iL-snW"/>
+                                    <constraint firstAttribute="height" constant="65" id="xOA-CO-tfw"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" pagingEnabled="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="8T4-kE-IEW">
+                                <rect key="frame" x="29" y="203" width="262" height="345"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <dataDetectorType key="dataDetectorTypes" calendarEvent="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96622824367088611" green="0.91081470802022102" blue="0.64421913777742146" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="C7S-na-0GP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="134" id="0Pn-jU-3bn"/>
+                            <constraint firstItem="hel-rp-Q25" firstAttribute="top" secondItem="sRR-64-jcL" secondAttribute="bottom" constant="3" id="3Q8-0I-hka"/>
+                            <constraint firstItem="8T4-kE-IEW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Eq-vT-WLm"/>
+                            <constraint firstItem="hel-rp-Q25" firstAttribute="trailing" secondItem="C7S-na-0GP" secondAttribute="trailing" id="92y-Dd-Wjl"/>
+                            <constraint firstItem="8T4-kE-IEW" firstAttribute="top" secondItem="C7S-na-0GP" secondAttribute="bottom" constant="19" id="B7q-yS-F1F"/>
+                            <constraint firstItem="sRR-64-jcL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Bc4-Uq-LIS"/>
+                            <constraint firstItem="hel-rp-Q25" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IQI-qa-1gW"/>
+                            <constraint firstItem="C7S-na-0GP" firstAttribute="top" secondItem="hel-rp-Q25" secondAttribute="bottom" constant="45" id="ISk-gt-8yh"/>
+                            <constraint firstItem="C7S-na-0GP" firstAttribute="top" secondItem="hel-rp-Q25" secondAttribute="bottom" constant="45" id="Kys-mT-OgF"/>
+                            <constraint firstItem="sRR-64-jcL" firstAttribute="centerX" secondItem="hel-rp-Q25" secondAttribute="centerX" constant="-3" id="SLu-VG-dv2"/>
+                            <constraint firstItem="8T4-kE-IEW" firstAttribute="leading" secondItem="C7S-na-0GP" secondAttribute="leading" id="b4E-Jb-vIe"/>
+                            <constraint firstItem="hel-rp-Q25" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hPT-qp-Rzb"/>
+                            <constraint firstAttribute="bottom" secondItem="8T4-kE-IEW" secondAttribute="bottom" constant="20" symbolic="YES" id="jHk-83-2BJ"/>
+                            <constraint firstItem="sRR-64-jcL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="91" id="jIH-tv-sB5"/>
+                            <constraint firstItem="C7S-na-0GP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="154" id="luG-31-WnC"/>
+                            <constraint firstItem="hel-rp-Q25" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="68" id="rrA-kB-bXo"/>
+                            <constraint firstItem="hel-rp-Q25" firstAttribute="leading" secondItem="C7S-na-0GP" secondAttribute="leading" id="rxz-eE-i5F"/>
+                            <constraint firstItem="C7S-na-0GP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wu1-Xj-xxL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IQI-qa-1gW"/>
+                                <exclude reference="rrA-kB-bXo"/>
+                                <exclude reference="0Pn-jU-3bn"/>
+                                <exclude reference="Kys-mT-OgF"/>
+                                <exclude reference="wu1-Xj-xxL"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="ISBNTextField" destination="C7S-na-0GP" id="BqM-6x-SEa"/>
+                        <outlet property="errorEtiqueta" destination="8T4-kE-IEW" id="Nxy-SN-zvr"/>
+                        <outlet property="mostrarTexto" destination="8T4-kE-IEW" id="DFr-QY-ztw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="110" height="70"/>
+    </resources>
 </document>
